@@ -15,9 +15,6 @@ const ProfileImage: React.FC<ProfileImageProps> = ({ className }) => {
         alt="Jaynarayan Gehlot"
         className="rounded-full w-full h-full object-cover relative z-10"
       />
-      <span className="absolute -bottom-2 -right-2 z-20 w-8 h-8 rounded-full flex items-center justify-center bg-portfolio-accent text-white text-xs">
-        8.42
-      </span>
     </div>
   );
 };
