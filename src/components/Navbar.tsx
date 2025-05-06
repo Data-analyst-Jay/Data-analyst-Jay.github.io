@@ -39,8 +39,6 @@ const Navbar: React.FC = () => {
           <a href="#projects" className="nav-link">Projects</a>
           <a href="#experience" className="nav-link">Experience</a>
           <a href="#contact" className="nav-link">Contact Me</a>
-          
-          {/* Removed the Download Resume button */}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -95,8 +93,6 @@ const Navbar: React.FC = () => {
           >
             Contact Me
           </a>
-          
-          {/* Also removed from mobile menu */}
         </nav>
       </div>
     </header>
