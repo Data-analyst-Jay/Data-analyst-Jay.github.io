@@ -40,7 +40,9 @@ const Navbar: React.FC = () => {
           <a href="#experience" className="nav-link">Experience</a>
           <a href="#contact" className="nav-link">Contact Me</a>
           
-          {/* Removed the Download Resume button */}
+          <CTAButton variant="secondary" href="/resume.pdf">
+            Download Resume
+          </CTAButton>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -96,7 +98,13 @@ const Navbar: React.FC = () => {
             Contact Me
           </a>
           
-          {/* Also removed from mobile menu */}
+          <CTAButton 
+            variant="secondary" 
+            href="/resume.pdf"
+            className="my-2 w-full justify-center"
+          >
+            Download Resume
+          </CTAButton>
         </nav>
       </div>
     </header>
