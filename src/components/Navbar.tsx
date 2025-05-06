@@ -24,21 +24,21 @@ const Navbar: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-portfolio-navy/95 backdrop-blur-lg shadow-lg py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-portfolio-navy/95 backdrop-blur-lg shadow-lg py-4' : 'bg-transparent py-6'
       }`}
     >
       <div className="container-custom flex justify-between items-center">
-        <a href="/" className="text-2xl font-bold text-portfolio-light">
+        <a href="/" className="text-3xl font-bold text-portfolio-light">
           JG<span className="text-portfolio-accent">.</span>
         </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#about" className="nav-link">About Me</a>
-          <a href="#skills" className="nav-link">Skills</a>
-          <a href="#projects" className="nav-link">Projects</a>
-          <a href="#experience" className="nav-link">Experience</a>
-          <a href="#contact" className="nav-link">Contact Me</a>
+          <a href="#about" className="nav-link text-base">About Me</a>
+          <a href="#skills" className="nav-link text-base">Skills</a>
+          <a href="#projects" className="nav-link text-base">Projects</a>
+          <a href="#experience" className="nav-link text-base">Experience</a>
+          <a href="#contact" className="nav-link text-base">Contact Me</a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
@@ -60,35 +60,35 @@ const Navbar: React.FC = () => {
         <nav className="container-custom flex flex-col gap-4">
           <a 
             href="#about" 
-            className="nav-link px-2 py-2"
+            className="nav-link px-2 py-2 text-base"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             About Me
           </a>
           <a 
             href="#skills" 
-            className="nav-link px-2 py-2"
+            className="nav-link px-2 py-2 text-base"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Skills
           </a>
           <a 
             href="#projects" 
-            className="nav-link px-2 py-2"
+            className="nav-link px-2 py-2 text-base"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Projects
           </a>
           <a 
             href="#experience" 
-            className="nav-link px-2 py-2"
+            className="nav-link px-2 py-2 text-base"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Experience
           </a>
           <a 
             href="#contact" 
-            className="nav-link px-2 py-2"
+            className="nav-link px-2 py-2 text-base"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Contact Me
