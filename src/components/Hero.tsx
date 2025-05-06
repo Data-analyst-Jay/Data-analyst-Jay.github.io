@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
               </CTAButton>
             </div>
             
-            <div className="inline-flex items-center gap-x-2 text-base text-portfolio-muted pt-6">
+            <div className="inline-flex items-center gap-x-2 text-lg md:text-xl text-portfolio-muted pt-6">
               <div className="w-12 h-0.5 bg-portfolio-accent/30"></div>
               <span>Undergraduate @ IIT Patna | Computer Science & Data Analytics</span>
             </div>
