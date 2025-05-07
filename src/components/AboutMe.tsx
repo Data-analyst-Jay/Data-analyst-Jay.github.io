@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Database, Flask, Code, LightbulbOff, Lightbulb, PieChart, BarChart } from 'lucide-react';
+import { Database, Code, LightbulbOff, Lightbulb, PieChart, BarChart, Beaker } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 
@@ -50,7 +50,7 @@ const AboutMe: React.FC = () => {
               <Card className="bg-portfolio-navy border-portfolio-slate/10 overflow-hidden group hover:border-portfolio-accent/50 transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="mb-4 text-portfolio-accent">
-                    <Flask size={28} />
+                    <Beaker size={28} />
                   </div>
                   <h5 className="text-lg font-semibold text-portfolio-light mb-2">Data Science</h5>
                   <p className="text-portfolio-muted">
