@@ -2,21 +2,16 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import AboutMe from '@/components/AboutMe';
 
 const Index: React.FC = () => {
   return (
     <div className="gradient-bg min-h-screen">
       <Navbar />
       <Hero />
+      <AboutMe />
       
       {/* Placeholder for future sections */}
-      <div id="about" className="py-20 container-custom">
-        <h2 className="section-heading">About Me</h2>
-        <p className="text-portfolio-muted">
-          This section will be implemented in the future.
-        </p>
-      </div>
-      
       <div id="skills" className="py-20 container-custom bg-portfolio-navy/50">
         <h2 className="section-heading">Skills</h2>
         <p className="text-portfolio-muted">
