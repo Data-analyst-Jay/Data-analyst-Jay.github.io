@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import AboutMe from '@/components/AboutMe';
+import ContactMe from '@/components/ContactMe';
 
 const Index: React.FC = () => {
   return (
@@ -33,12 +34,7 @@ const Index: React.FC = () => {
         </p>
       </div>
       
-      <div id="contact" className="py-20 container-custom">
-        <h2 className="section-heading">Contact Me</h2>
-        <p className="text-portfolio-muted">
-          This section will be implemented in the future.
-        </p>
-      </div>
+      <ContactMe />
       
       <footer className="py-6 text-center text-portfolio-muted text-sm border-t border-portfolio-slate/10">
         <div className="container-custom">
