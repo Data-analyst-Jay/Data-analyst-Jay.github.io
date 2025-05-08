@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, Send } from 'lucide-react';
+import { Github, Linkedin, Mail, Send, Brain } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
@@ -228,9 +228,14 @@ const ContactMe: React.FC = () => {
         </div>
       </div>
       
-      {/* Custom Footer Banner */}
+      {/* Custom Footer Banner - Increased size */}
       <div className="mt-20 text-center text-portfolio-muted">
-        <p className="text-sm">Built with Brain 🧠 and AI 🤖</p>
+        <p className="text-base flex items-center justify-center gap-2">
+          Built with <Brain className="w-5 h-5 text-portfolio-accent" /> and 
+          <span className="font-bold text-portfolio-accent flex items-center">
+            AI <span className="text-portfolio-accent ml-1">🧠</span>
+          </span>
+        </p>
       </div>
     </section>
   );
