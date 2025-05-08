@@ -228,12 +228,12 @@ const ContactMe: React.FC = () => {
         </div>
       </div>
       
-      {/* Custom Footer Banner - Increased size */}
-      <div className="mt-20 text-center text-portfolio-muted">
+      {/* Custom Footer Banner - Reduced margin-top */}
+      <div className="mt-16 text-center text-portfolio-muted">
         <p className="text-base flex items-center justify-center gap-2">
           Built with <Brain className="w-5 h-5 text-portfolio-accent" /> and 
           <span className="font-bold text-portfolio-accent flex items-center">
-            AI <span className="text-portfolio-accent ml-1">🧠</span>
+            AI
           </span>
         </p>
       </div>
