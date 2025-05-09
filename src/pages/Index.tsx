@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import AboutMe from '@/components/AboutMe';
 import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
 import ContactMe from '@/components/ContactMe';
 
 const Index: React.FC = () => {
@@ -21,12 +22,7 @@ const Index: React.FC = () => {
         </p>
       </div>
       
-      <div id="experience" className="py-20 container-custom bg-portfolio-navy/50">
-        <h2 className="section-heading">Experience</h2>
-        <p className="text-portfolio-muted">
-          This section will be implemented in the future.
-        </p>
-      </div>
+      <Experience />
       
       <ContactMe />
       
