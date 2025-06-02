@@ -10,16 +10,11 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] pointer-events-none"></div>
       
       <div className="container-custom h-full flex flex-col justify-center">
-        <div className="grid grid-cols-1 gap-8 lg:gap-12 items-center">
-          <div className="space-y-6 animate-fade-in">
-            <div className="flex items-center gap-6">
-              <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0">
-                <ProfileImage className="animate-fade-in" />
-              </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-portfolio-light leading-tight">
-                Jaynarayan <span className="text-portfolio-accent">Gehlot</span>
-              </h1>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="md:col-span-7 space-y-6 animate-fade-in">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-portfolio-light leading-tight">
+              Jaynarayan <span className="text-portfolio-accent">Gehlot</span>
+            </h1>
             
             <p className="text-xl md:text-2xl text-portfolio-muted max-w-2xl leading-relaxed">
               An analytical thinker, AI Enthusiast and decisive, undergraduate student at IIT Patna, passionate about leveraging data to drive impactful insights and solve real-world problems.
@@ -36,9 +31,17 @@ const Hero: React.FC = () => {
               </CTAButton>
             </div>
             
-            <div className="inline-flex items-center gap-x-2 text-lg md:text-xl text-portfolio-muted pt-6 pb-16 md:pb-8">
+            <div className="inline-flex items-center gap-x-2 text-lg md:text-xl text-portfolio-muted pt-6 pb-8 md:pb-0">
               <div className="w-12 h-0.5 bg-portfolio-accent/30"></div>
               <span>Undergraduate @ IIT Patna | Computer Science & Data Analytics</span>
+            </div>
+          </div>
+          
+          <div className="md:col-span-5 order-first md:order-last">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
+              <ProfileImage className="animate-fade-in" />
+              
+              <div className="absolute -z-10 inset-0 bg-gradient-to-tr from-portfolio-accent/20 to-transparent rounded-full blur-3xl opacity-20"></div>
             </div>
           </div>
         </div>
