@@ -6,7 +6,7 @@ import ProfileImage from './ProfileImage';
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen pt-24 md:pt-32 relative overflow-hidden">
+    <section className="min-h-screen pt-24 md:pt-32 relative overflow-hidden pb-16">
       <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] pointer-events-none"></div>
       
       <div className="container-custom h-full flex flex-col justify-center">
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
               </CTAButton>
             </div>
             
-            <div className="inline-flex items-center gap-x-2 text-lg md:text-xl text-portfolio-muted pt-6">
+            <div className="inline-flex items-center gap-x-2 text-lg md:text-xl text-portfolio-muted pt-6 pb-8 md:pb-0">
               <div className="w-12 h-0.5 bg-portfolio-accent/30"></div>
               <span>Undergraduate @ IIT Patna | Computer Science & Data Analytics</span>
             </div>
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce hidden md:flex">
         <div className="text-portfolio-muted text-base">Scroll down</div>
         <ChevronRight className="rotate-90 text-portfolio-accent mt-1" size={18} />
       </div>
