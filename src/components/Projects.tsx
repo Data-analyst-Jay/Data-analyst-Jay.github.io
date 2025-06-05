@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -33,6 +32,15 @@ const Projects: React.FC = () => {
       tools: ['Altair AI Studio', 'Excel', 'Machine Learning', 'Decision Tree algorithms', 'Data Analysis', 'Statistical Analysis', 'EDA'],
       outcome: 'The crop recommendation model achieved an accuracy of 81.2%, providing reliable, data-driven suggestions for optimal crop selection. The crop yield prediction model demonstrated notable precision with a mean absolute error of 6.548 (±4.413), offering valuable forecasting capabilities for agricultural planning. These models highlight the significant potential of AI in providing actionable insights for the agricultural sector.',
       category: 'Machine Learning'
+    },
+    {
+      id: 'air-quality-sql',
+      title: 'SQL-Based Air Quality Analysis for Major Indian Cities',
+      summary: "Conducted an in-depth SQL-based analysis of one year's air quality data (2023-24, covering 2191 records and 8 variables) for six major Indian cities. This project aimed to identify crucial pollution trends and extract actionable insights to inform strategies for reducing urban air pollution and addressing its underlying causes.",
+      methodology: "Leveraged MySQL for complex data querying, aggregation, and detailed analysis of the extensive air quality database. The methodology involved applying systematic data analysis techniques to explore pollution patterns, identify correlations between variables, and uncover significant anomalies. Core Database Management (DBMS) principles ensured efficient data handling, with Excel used for initial data inspection and supplementary review.",
+      tools: ['MySQL', 'SQL', 'Excel', 'Data Analysis', 'DBMS'],
+      outcome: "Successfully extracted key trends and actionable insights concerning air quality, providing a data-informed foundation for developing targeted pollution control measures and public health advisories in major Indian urban centers. Future Scope: The project roadmap includes designing and developing a dedicated web UI using Python and Django to enable dynamic querying, visualization, and broader public interaction with the air quality database and its findings.",
+      category: 'Database'
     }
   ];
 
@@ -63,7 +71,9 @@ const Projects: React.FC = () => {
       'Decision Tree algorithms': 'bg-violet-500/10 text-violet-400 border-violet-500/20',
       'Data Analysis': 'bg-red-500/10 text-red-400 border-red-500/20',
       'Statistical Analysis': 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
-      'EDA': 'bg-orange-500/10 text-orange-400 border-orange-500/20'
+      'EDA': 'bg-orange-500/10 text-orange-400 border-orange-500/20',
+      'MySQL': 'bg-blue-600/10 text-blue-300 border-blue-600/20',
+      'DBMS': 'bg-slate-500/10 text-slate-400 border-slate-500/20'
     };
     return toolColors[tool] || 'bg-portfolio-slate/10 text-portfolio-muted border-portfolio-slate/20';
   };
