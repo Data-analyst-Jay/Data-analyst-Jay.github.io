@@ -24,6 +24,15 @@ const Projects: React.FC = () => {
       tools: ['Excel', 'Power BI', 'AI techniques', 'EDA processes', 'Data Cleaning'],
       outcome: 'Successfully identified key sales trends from the two-year dataset and delivered three actionable business insights designed to inform strategic decision-making.',
       category: 'Data Analytics'
+    },
+    {
+      id: 'agricultural-ml',
+      title: 'Machine Learning for Agricultural Optimization using Altair AI Studio',
+      summary: 'Developed two distinct machine learning models (Decision Trees) within Altair AI Studio to address critical agricultural optimization challenges. These models focus on predicting crop yield and providing data-driven crop recommendations, aiming to enhance resource management, support food security efforts, and improve farmer profitability. This project was created for the Altair Data Science contest held on Unstop.',
+      methodology: 'Leveraged machine learning techniques, specifically Decision Tree algorithms, using the Altair AI Studio platform. The methodology involved comprehensive Exploratory Data Analysis (EDA) of agricultural datasets, statistical analysis to identify influential factors, and robust data analysis practices to build, train, and validate predictive models for both crop recommendation and yield forecasting.',
+      tools: ['Altair AI Studio', 'Excel', 'Machine Learning', 'Decision Tree algorithms', 'Data Analysis', 'Statistical Analysis', 'EDA'],
+      outcome: 'The crop recommendation model achieved an accuracy of 81.2%, providing reliable, data-driven suggestions for optimal crop selection. The crop yield prediction model demonstrated notable precision with a mean absolute error of 6.548 (±4.413), offering valuable forecasting capabilities for agricultural planning. These models highlight the significant potential of AI in providing actionable insights for the agricultural sector.',
+      category: 'Machine Learning'
     }
   ];
 
@@ -48,7 +57,13 @@ const Projects: React.FC = () => {
       'SQL': 'bg-purple-500/10 text-purple-400 border-purple-500/20',
       'AI techniques': 'bg-portfolio-accent/10 text-portfolio-accent border-portfolio-accent/20',
       'EDA processes': 'bg-orange-500/10 text-orange-400 border-orange-500/20',
-      'Data Cleaning': 'bg-pink-500/10 text-pink-400 border-pink-500/20'
+      'Data Cleaning': 'bg-pink-500/10 text-pink-400 border-pink-500/20',
+      'Altair AI Studio': 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20',
+      'Machine Learning': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20',
+      'Decision Tree algorithms': 'bg-violet-500/10 text-violet-400 border-violet-500/20',
+      'Data Analysis': 'bg-red-500/10 text-red-400 border-red-500/20',
+      'Statistical Analysis': 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
+      'EDA': 'bg-orange-500/10 text-orange-400 border-orange-500/20'
     };
     return toolColors[tool] || 'bg-portfolio-slate/10 text-portfolio-muted border-portfolio-slate/20';
   };
