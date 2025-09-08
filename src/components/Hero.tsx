@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
                 <ChevronRight size={18} />
               </CTAButton>
               
-              <CTAButton href="/resume.pdf" variant="secondary">
+              <CTAButton href="https://drive.google.com/uc?export=download&id=1qzZvbrhrQp0KYH-hLu3hn_XRChmvbu3x" variant="secondary">
                 Download Resume
               </CTAButton>
             </div>
