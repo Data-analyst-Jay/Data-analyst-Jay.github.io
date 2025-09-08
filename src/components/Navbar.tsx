@@ -34,6 +34,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
+          <a href="#" className="nav-link text-base">Home</a>
           <a href="#about" className="nav-link text-base">About Me</a>
           <a href="#skills" className="nav-link text-base">Skills</a>
           <a href="#projects" className="nav-link text-base">Projects</a>
@@ -58,6 +59,13 @@ const Navbar: React.FC = () => {
         }`}
       >
         <nav className="container-custom flex flex-col gap-4">
+          <a 
+            href="#" 
+            className="nav-link px-2 py-2 text-base"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Home
+          </a>
           <a 
             href="#about" 
             className="nav-link px-2 py-2 text-base"
