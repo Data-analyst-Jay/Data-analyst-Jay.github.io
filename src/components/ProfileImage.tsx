@@ -9,7 +9,7 @@ const ProfileImage: React.FC<ProfileImageProps> = ({ className }) => {
   return (
     <div className={`relative ${className}`}>
       <img
-        src="/lovable-uploads/c37825dd-1961-41ad-8f4c-775b0c204d45.png"
+        src="/lovable-uploads/91f3ccb5-2e0b-4abd-a747-58e1a1ea0ac8.png"
         alt="Jaynarayan Gehlot"
         className="rounded-full w-full h-full object-cover"
       />
